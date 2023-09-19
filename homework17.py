@@ -1,18 +1,6 @@
-import functools
-import datetime
+with open('airport-codes_csv.csv', mode='r', encoding='utf-8') as file:
+    for line in file.readlines():
+        data = line.split(';')
 
-def logger(file_name='airport-codes_csv.csv'):
-    def wrapper1(func):
-        @functools.wraps(func)
-        def wrapper(*args, **kwargs):
-            result = func(*args, **kwargs)
-            with open(file_name, mode='a', encoding='utf-8') as file:
-                file.write(f'{datetime.datetime.now()};{func.__name__};{result}\n')
-            return result
-        return wrapper
-    return wrapper1
-
-@logger()
-def foo(arg):
-    return arg * 2
-foo(6)
+        if data[5] == 'UA':
+            print(data[2])
