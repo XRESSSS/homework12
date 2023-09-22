@@ -6,8 +6,6 @@ class Car:
         self.fuel_consumption = fuel_consumption
         self.run = 0
 
-
-
     def __str__(self):
         return f'Car {self.brand}'
 
