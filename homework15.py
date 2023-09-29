@@ -1,6 +1,6 @@
 import requests
 
-url = ''
+url = 'https://script.google.com/macros/s/AKfycbwQtueB9osOYpDA6XpR_hNTxiTH5TaakVRj6smrDaQEltP4r7TLmaxT4Ai1hmwp14U5/exec'
 
 data = requests.get(url)
 
