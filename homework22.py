@@ -96,3 +96,5 @@ with sqlite3.connect('homework22.sqlite3') as connection:
         WHERE price = 100
     """
     cursor.execute(query)
+
+
