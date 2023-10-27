@@ -1,6 +1,6 @@
 import sqlite3
 
-with sqlite3.connect('homework_db.sqlite3') as connection:
+with sqlite3.connect('homework22.sqlite3') as connection:
     cursor = connection.cursor()
 
     # query = """
