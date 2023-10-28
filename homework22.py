@@ -78,7 +78,7 @@ with sqlite3.connect('homework22.sqlite3') as connection:
 
     # query = """
     #     ALTER TABLE books_shop
-    #     ADD COLUMN barcode INTEGER
+    #     ADD COLUMN barcode TEXT
     # """
     # cursor.execute(query)
 
