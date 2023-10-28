@@ -15,8 +15,8 @@ with sqlite3.connect('homework22.sqlite3') as connection:
 
     # id = '1'
     # title = 'History'
-    # price = '120'
-    # number_of_pages = '274'
+    # price = 120
+    # number_of_pages = 274
     # values = [id, title, price, number_of_pages]
     #
     # query = """
@@ -27,8 +27,8 @@ with sqlite3.connect('homework22.sqlite3') as connection:
 
     # id = '2'
     # title = 'non-fiction'
-    # price = '87'
-    # number_of_pages = '77'
+    # price = 87
+    # number_of_pages = 77
     # values = [id, title, price, number_of_pages]
     #
     # query = """
@@ -38,9 +38,9 @@ with sqlite3.connect('homework22.sqlite3') as connection:
     # cursor.execute(query, values)
 
     # values = (
-    #     ('3', 'Geometry', '50', '600'),
-    #     ('4', 'History Ukraine', '99', '50'),
-    #     ('5', 'Literature', '250', '125'),
+    #     ('3', 'Geometry', 50, 600),
+    #     ('4', 'History Ukraine', 99, 50),
+    #     ('5', 'Literature', 250, 125),
     # )
     #
     # query = """
@@ -78,7 +78,7 @@ with sqlite3.connect('homework22.sqlite3') as connection:
 
     # query = """
     #     ALTER TABLE books_shop
-    #     ADD COLUMN barcode
+    #     ADD COLUMN barcode INTEGER
     # """
     # cursor.execute(query)
 
@@ -91,10 +91,10 @@ with sqlite3.connect('homework22.sqlite3') as connection:
     # """
     # cursor.execute(query, {'Barcode': '0-00045'})
 
-    query = """
-        DELETE FROM books_shop
-        WHERE price = 100
-    """
-    cursor.execute(query)
+    # query = """
+    #     DELETE FROM books_shop
+    #     WHERE price = 100
+    # """
+    # cursor.execute(query)
 
 
